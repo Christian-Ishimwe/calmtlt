@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./static/main.css">
+    <title>CALM TLT LTD</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <a href="{{url_for('home')}}" class="navbar-brand">CALM TLT</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{{url_for('home')}}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">About</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Travel Packages
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <a class="dropdown-item" href="#">East Africa</a>
+                        <a class="dropdown-item" href="#">Schengen</a>
+                        <a class="dropdown-item" href="#">Latin America</a>
+                        <a class="dropdown-item" href="#">North America</a>
+                        <a class="dropdown-item" href="#">Oceania</a>
+                        <a class="dropdown-item" href="#">Asia</a>
+                        <a class="dropdown-item" href="#">Middle East</a>
+
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Flights Tickets
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <a class="dropdown-item" href="#">Buy Cheap Tickets</a>
+                        <a class="dropdown-item" href="#">Buy Standard Tickets</a>
+
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Visas/ PR
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <a class="dropdown-item" href="#">Tourist Visas.</a>
+                        <a class="dropdown-item" href="#">Digital Nomad Visas</a>
+                        <a class="dropdown-item" href="#">Business Visas</a>
+                        <a class="dropdown-item" href="#">Resident Permits</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown4" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Logistics Package
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                        <a class="dropdown-item" href="#">Airport Pick & Drop </a>
+                        <a class="dropdown-item" href="#">City Roaming.</a>
+                    </div>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Auxiliary Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                        <a class="dropdown-item" href="#">Buy Health Insurance</a>
+                        <a class="dropdown-item" href="#">Reserve Flight & Accommodations.</a>
+                    </div>
+                </li>
+
+
+
+
+
+
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown5" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Consultancy Services
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown5">
+                        <a class="dropdown-item" href="#">Edu-Tourism</a>
+                        <a class="dropdown-item" href="#">Medic-Tourism</a>
+                        <a class="dropdown-item" href="#">Cultural-Tourism</a>
+                        <a class="dropdown-item" href="#">Business-Tourism</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Contacts</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content%}
+    {% endblock %}
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://kit.fontawesome.com/61b121e1cf.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
